@@ -16,14 +16,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/evasquare/formatto.git"
+        "url": "git+https://github.com/stellacube/formatto.git"
     },
-    "author": "Eva",
+    "author": "Stella",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/evasquare/formatto/issues"
+        "url": "https://github.com/stellacube/formatto/issues"
     },
-    "homepage": "https://github.com/evasquare/formatto#readme",
+    "homepage": "https://github.com/stellacube/formatto#readme",
     "devDependencies": {
         "@rollup/plugin-alias": "^5.0.1",
         "@rollup/plugin-commonjs": "^25.0.7",

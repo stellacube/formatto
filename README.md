@@ -27,8 +27,4 @@ Obsidian uses "live preview" as the default editing mode. But this plugin was de
 
 ## Contributing
 If you're interested in participating in this project, please refer to the
-[contribution guide](https://github.com/evasquare/formatto/blob/main/CONTRIBUTING.md).
-
-
-## This project is still being maintained!
-You might have noticed the owner of this repository set their profile private. But that doesn't mean the project is dead. You can still create issues and pull requests.
+[contribution guide](https://github.com/stellacube/formatto/blob/main/CONTRIBUTING.md).
