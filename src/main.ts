@@ -10,7 +10,7 @@ import { FormattoOptionTab } from "@src/obsidian/options/optionTab.js";
 import { DEFAULT_OPTIONS } from "@src/obsidian/options/optionTypes.js";
 
 import __wbg_init from "../wasm/pkg/formatto_wasm.js";
-// @ts-expect-error It needs to be imported directly to use it with Rollup.
+// @ts-ignore It needs to be imported directly to use it with Rollup.
 import formatto_wasm from "../wasm/pkg/formatto_wasm_bg.wasm";
 
 import type { FormattoPluginOptions } from "@src/obsidian/options/optionTypes.ts";
@@ -45,6 +45,7 @@ export default class FormattoPlugin extends Plugin {
 
         // Initialize WebAssembly
         await (async () => {
+            // @ts-expect-error It needs to be imported directly to use it with Rollup.
             await __wbg_init(await formatto_wasm());
         })();
 
