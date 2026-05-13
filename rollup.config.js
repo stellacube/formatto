@@ -9,8 +9,9 @@ import wasm from "@rollup/plugin-wasm";
 export default {
     input: "src/main.ts",
     output: {
-        format: "es",
+        format: "cjs",
         file: "main.js",
+        exports: "default",
     },
     external: ["obsidian", "fs", "os", "path"],
     plugins: [
