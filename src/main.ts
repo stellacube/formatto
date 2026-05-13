@@ -10,7 +10,7 @@ import { FormattoOptionTab } from "@src/obsidian/options/optionTab.js";
 import { DEFAULT_OPTIONS } from "@src/obsidian/options/optionTypes.js";
 
 import __wbg_init from "../wasm/pkg/formatto_wasm.js";
-// @ts-ignore It needs to be imported directly to use it with Rollup.
+// @ts-expect-error It needs to be imported directly to use it with Rollup.
 import formatto_wasm from "../wasm/pkg/formatto_wasm_bg.wasm";
 
 import type { FormattoPluginOptions } from "@src/obsidian/options/optionTypes.ts";
@@ -56,14 +56,8 @@ export default class FormattoPlugin extends Plugin {
         this.editorMenus.registerEvents();
         this.modify.registerEvents();
         this.commands.registerCommands();
-
-        console.log(
-            "Plugin Loaded: Formatto\n(Some error details are going to be displayed here.)",
-        );
     }
 
     /** Runs when the plugin is disabled. */
-    onunload() {
-        console.log("Plugin Unloaded: Formatto");
-    }
+    onunload() {}
 }

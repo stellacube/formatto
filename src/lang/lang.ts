@@ -1,9 +1,10 @@
+import { getLanguage } from "obsidian";
 import de from "./locale/de.json";
 import en from "./locale/en.json";
 import hu from "./locale/hu.json";
 import ko from "./locale/ko.json";
 
-const detectedLanguage = window.localStorage.getItem("language");
+const detectedLanguage = getLanguage();
 
 export const LOCALE_CATEGORY = {
     COMMANDS: "commands",

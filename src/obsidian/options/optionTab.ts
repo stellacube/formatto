@@ -237,7 +237,7 @@ export class FormattoOptionTab extends PluginSettingTab {
             .setDesc(
                 getLocale(
                     LOCALE_CATEGORY.OTHER_GAPS,
-                    'Decides gaps before "contents that are after headings."', // eslint-disable-line
+                    'Decides gaps before "contents that are after headings."', // eslint-disable-line quotes
                 ),
             )
             .addText((text) =>
@@ -270,7 +270,7 @@ export class FormattoOptionTab extends PluginSettingTab {
             .setDesc(
                 getLocale(
                     LOCALE_CATEGORY.OTHER_GAPS,
-                    'Decides gaps before "contents that are after code blocks."', // eslint-disable-line
+                    'Decides gaps before "contents that are after code blocks."', // eslint-disable-line quotes
                 ),
             )
             .addText((text) =>
@@ -330,7 +330,7 @@ export class FormattoOptionTab extends PluginSettingTab {
             .setDesc(
                 getLocale(
                     LOCALE_CATEGORY.OTHER_GAPS,
-                    'Decides gaps before "code blocks that are after headings."', // eslint-disable-line
+                    'Decides gaps before "code blocks that are after headings."', // eslint-disable-line quotes
                 ),
             )
             .addText((text) =>
@@ -363,7 +363,7 @@ export class FormattoOptionTab extends PluginSettingTab {
             .setDesc(
                 getLocale(
                     LOCALE_CATEGORY.OTHER_GAPS,
-                    'Decides gaps before "callouts that are after headings."', // eslint-disable-line
+                    'Decides gaps before "callouts that are after headings."', // eslint-disable-line quotes
                 ),
             )
             .addText((text) =>
@@ -391,7 +391,7 @@ export class FormattoOptionTab extends PluginSettingTab {
             .setDesc(
                 getLocale(
                     LOCALE_CATEGORY.OTHER_GAPS,
-                    'Decides gaps before "callouts\"', // eslint-disable-line
+                    'Decides gaps before "callouts\"', // eslint-disable-line quotes, no-useless-escape
                 ),
             )
             .addText((text) =>

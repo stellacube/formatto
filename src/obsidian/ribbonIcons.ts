@@ -48,7 +48,7 @@ export class FormattoRibbonIcons {
                 LOCALE_CATEGORY.RIBBON_ICONS,
                 "Format Notes in Current Folder",
             ),
-            () => {
+            async () => {
                 const editor = this.plugin.app.workspace.activeEditor?.editor;
                 const activeView =
                     this.plugin.app.workspace.getActiveViewOfType(MarkdownView);
@@ -83,7 +83,7 @@ export class FormattoRibbonIcons {
                     return;
                 }
 
-                this.plugin.utils.formatFolderFiles(
+                await this.plugin.utils.formatFolderFiles(
                     activeFile.parent?.path ?? "",
                 );
             },
